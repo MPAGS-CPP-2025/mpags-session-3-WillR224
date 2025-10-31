@@ -6,20 +6,17 @@ int main()
     char in_char{'x'};
     std::string out_str{""};
 
-    while(std::cin >> in_char)
-    {
-        if (std::isalpha(in_char))
-        {
+    while (std::cin >> in_char) {
+        if (std::isalpha(in_char)) {
             out_str += std::toupper(in_char);
             continue;
         }
 
-        switch (in_char)
-        {
+        switch (in_char) {
             case '1':
                 out_str += "ONE";
                 break;
-            
+
             case '2':
                 out_str += "TWO";
                 break;
