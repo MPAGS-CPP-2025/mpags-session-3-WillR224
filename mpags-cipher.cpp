@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+
 int main()
 {
     // This is a comment
@@ -10,11 +12,20 @@ int main()
     int a; //Not initalised, takes the value in the memory 
     a = 12;
     int b = 1; 
-    int c(13); 
     double d{12.593}; // c++11 Uniform initialization. 
     
+    int c{d};
     int e = c*d;
     std::cout << a << "\n";
     std::cout << e << "\n";
+    std::cout << c << "\n";
+
+    std::string msg {"Hello"};
+    std::cout << msg << "\n";
+
+    const double g{5.9};
+    std::cout << g << "\n";
+    int f{12};
+    std::cout << f << "\n";
 
 }
